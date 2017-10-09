@@ -1,4 +1,4 @@
-# Daily Life Algorithm
+# Daily Algorithm
 
 <div>
 	<iframe src="https://giphy.com/embed/ofqccIX7HcjPG" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
