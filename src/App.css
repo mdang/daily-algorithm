@@ -3,13 +3,21 @@ main {
 }
 
 main section {
-  width: 50%;
+  width: 33%;
   float: left;
   padding: 0 1em 2em;
 }
 
-nav {
+nav.heading {
   margin-bottom: 1.2em;
+}
+
+article {
+  clear: both;
+}
+
+.md-form {
+  margin-bottom: 1rem;
 }
 
 .navbar-brand {
@@ -18,7 +26,16 @@ nav {
 }
 
 .card {
-  margin-bottom: 1.4em;
+  margin-bottom: .7em;
+}
+
+.card .navbar {
+  color: #fff;
+}
+
+.card-chart {
+  padding: .4em;
+  margin: .3em .7em;
 }
 
 .card-body {
@@ -29,6 +46,10 @@ nav {
   position: absolute;
   right: 20px;
   top: 7px;
+}
+
+.card-remove i {
+  color: #333;
 }
 
 .card-body h4 {
@@ -44,4 +65,15 @@ nav {
 .card-text {
   font-size: .9rem;
   color: #747373;
+}
+
+.tasks-container {
+  width: 100%;
+  margin-top: .7em;
+}
+
+.tasks-container .card {
+  width: calc(24.4% - .5em);
+  display: inline-block;
+  margin: .5em;
 }
