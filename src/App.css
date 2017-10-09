@@ -1,0 +1,41 @@
+main {
+  margin: 0 auto;
+}
+
+main section {
+  width: 50%;
+  float: left;
+  padding: 0 1em 2em;
+}
+
+nav {
+  margin-bottom: 1.2em;
+}
+
+.navbar-brand {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.7rem;
+}
+
+.card {
+  margin-bottom: 1.4em;
+}
+
+.card-body {
+  padding: 1.3em 1.6em .8em;
+}
+
+.card-body h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-body i {
+  padding-top: .3em;
+}
+
+.card-text {
+  font-size: .9rem;
+  color: #747373;
+}

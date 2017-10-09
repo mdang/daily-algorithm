@@ -1,0 +1,19 @@
+{
+  "name": "daily-algorithm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "chart.js": "^1.1.1",
+    "mdbreact": "^4.0.0-alpha",
+    "react": "^16.0.0",
+    "react-chartjs": "^0.8.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
