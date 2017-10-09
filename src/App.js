@@ -8,7 +8,7 @@ class App extends Component {
         <nav className="navbar navbar-dark deep-orange darken-1">
           <a className="navbar-brand" href="/">Daily Algorithm</a>
         </nav>
-        
+
         <main className="container-fluid">
           <section>
             <div className="card">
@@ -22,6 +22,9 @@ class App extends Component {
 
             <div className="card">
               <div className="card-body">
+                <div className="card-remove">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
                 <form>
                   <div className="md-form">
                     <i className="fa fa-pencil-square-o prefix grey-text"></i>
@@ -40,6 +43,9 @@ class App extends Component {
 
             <div className="card">
               <div className="card-body">
+                <div className="card-remove">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
                 <form>
                   <div className="md-form">
                     <i className="fa fa-pencil-square-o prefix grey-text"></i>

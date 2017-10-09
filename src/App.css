@@ -25,6 +25,12 @@ nav {
   padding: 1.3em 1.6em .8em;
 }
 
+.card-remove {
+  position: absolute;
+  right: 20px;
+  top: 7px;
+}
+
 .card-body h4 {
   font-weight: 400;
   font-size: 1.5rem;
