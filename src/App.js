@@ -62,8 +62,8 @@ class App extends Component {
         </nav>
 
         <main className="container-fluid">
-          <article>
-            <section>
+          <article className="row">
+            <section className="col-md-4 col-sm-6 col-xs-12">
               <div className="card z-depth-1-half">
                 <nav className="navbar navbar-dark deep-orange lighten-1">
                   Current Time Usage
@@ -79,7 +79,7 @@ class App extends Component {
               </div>
             </section>
 
-            <section>
+            <section className="col-md-4 col-sm-6 col-xs-12">
               <div className="card z-depth-1-half">
                 <nav className="navbar navbar-dark deep-orange lighten-1">
                   Optimized Time Usage
@@ -95,7 +95,7 @@ class App extends Component {
               </div>
             </section>
 
-            <section>
+            <section className="col-md-4 col-sm-6 col-xs-12">
               <div className="card z-depth-1-half">
                 <nav className="navbar navbar-dark deep-orange lighten-1">
                   Top Time Wasters
@@ -123,124 +123,134 @@ class App extends Component {
               <button className="btn btn-default">Add Daily Task</button>
             </div>
 
-            <section className="tasks">
+            <section className="tasks row">
 
-              <div className="card task">
-                <div className="card-body">
-                  <div className="card-remove">
-                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
-                  </div>
-                  <div className="md-form">
-                    <input type="text" name="task" className="form-control" />
-                    <label for="task">Task</label>
-                  </div>
+              <div className="col-md-3 col-sm-6 col-xs-12 task">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="card-remove">
+                      <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                    <div className="md-form">
+                      <input type="text" name="task" className="form-control" />
+                      <label for="task">Task</label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Current time spent <span>(minutes)</span></label>
-                  </div>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Current time spent <span>(minutes)</span></label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="card task">
-                <div className="card-body">
-                  <div className="card-remove">
-                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
-                  </div>
-                  <div className="md-form">
-                    <input type="text" name="task" className="form-control" />
-                    <label for="task">Task</label>
-                  </div>
+              <div className="col-md-3 col-sm-6 col-xs-12 task">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="card-remove">
+                      <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                    <div className="md-form">
+                      <input type="text" name="task" className="form-control" />
+                      <label for="task">Task</label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Current time spent <span>(minutes)</span></label>
-                  </div>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Current time spent <span>(minutes)</span></label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="card task">
-                <div className="card-body">
-                  <div className="card-remove">
-                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
-                  </div>
-                  <div className="md-form">
-                    <input type="text" name="task" className="form-control" />
-                    <label for="task">Task</label>
-                  </div>
+              <div className="col-md-3 col-sm-6 col-xs-12 task">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="card-remove">
+                      <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                    <div className="md-form">
+                      <input type="text" name="task" className="form-control" />
+                      <label for="task">Task</label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Current time spent <span>(minutes)</span></label>
-                  </div>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Current time spent <span>(minutes)</span></label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="card task">
-                <div className="card-body">
-                  <div className="card-remove">
-                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
-                  </div>
-                  <div className="md-form">
-                    <input type="text" name="task" className="form-control" />
-                    <label for="task">Task</label>
-                  </div>
+              <div className="col-md-3 col-sm-6 col-xs-12 task">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="card-remove">
+                      <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                    <div className="md-form">
+                      <input type="text" name="task" className="form-control" />
+                      <label for="task">Task</label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Current time spent <span>(minutes)</span></label>
-                  </div>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Current time spent <span>(minutes)</span></label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="card task">
-                <div className="card-body">
-                  <div className="card-remove">
-                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
-                  </div>
-                  <div className="md-form">
-                    <input type="text" name="task" className="form-control" />
-                    <label for="task">Task</label>
-                  </div>
+              <div className="col-md-3 col-sm-6 col-xs-12 task">
+                <div className="card">
+                  <div className="card-body">
+                    <div className="card-remove">
+                      <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                    <div className="md-form">
+                      <input type="text" name="task" className="form-control" />
+                      <label for="task">Task</label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Current time spent <span>(minutes)</span></label>
-                  </div>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Current time spent <span>(minutes)</span></label>
+                    </div>
 
-                  <div className="md-form">
-                    <i className="fa fa-clock-o prefix grey-text"></i>
-                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
-                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    <div className="md-form">
+                      <i className="fa fa-clock-o prefix grey-text"></i>
+                      <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                      <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                    </div>
                   </div>
                 </div>
               </div>
