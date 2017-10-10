@@ -4,10 +4,6 @@ import './OptimizedChart.css';
 import { Pie } from 'react-chartjs-2';
 
 class OptimizedChart extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const labels = this.props.tasks.map(task => {
       return task.name

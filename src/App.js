@@ -6,6 +6,10 @@ import Report from './components/Report';
 import Tasks from './components/Tasks';
 
 class App extends Component {
+  handleTaskChange(e) {
+    console.log('Task changed:', e);
+  }
+
   render() {
     const tasks = [
       {
@@ -41,7 +45,7 @@ class App extends Component {
 
         <main className="container-fluid">
           <Report tasks={ tasks } />
-          <Tasks tasks={ tasks } />
+          <Tasks tasks={ tasks } handleTaskChange={ this.handleTaskChange } />
         </main>
       </div>
     );

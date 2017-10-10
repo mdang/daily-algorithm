@@ -5,8 +5,41 @@ import { Bar } from 'react-chartjs-2';
 
 class TopChart extends Component {
   render() {
+    const tasks = this.props.tasks.slice(0);
+    const sortedTasks = tasks.map(task => {
+      task.diff = task.ideal - task.current;
+      return task;
+    });
+
+    sortedTasks.sort((a, b) => {
+      if (a.diff < b.diff) {
+        return -1;
+      } else if (a.diff > b.diff) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+
+    console.log('sortedTasks', sortedTasks);
+
+    const topTasks = sortedTasks.splice(0, 3);
+    console.log('topTasks', topTasks);
+
+    const labels = topTasks.map(task => {
+      return task.name;
+    });
+
+    const currentData = topTasks.map(task => {
+      return task.current;
+    });
+
+    const idealData = topTasks.map(task => {
+      return task.ideal;
+    });
+
     const data = {
-      labels: ['Sleep', 'Watching TV', 'Shower'],
+      labels: labels,
       datasets: [
         {
           label: 'Current',
@@ -15,7 +48,7 @@ class TopChart extends Component {
           borderWidth: 1,
           hoverBackgroundColor: 'rgba(255,99,132,0.4)',
           hoverBorderColor: 'rgba(255,99,132,1)',
-          data: [65, 59, 80]
+          data: currentData
         },
         {
           label: 'Optimized',
@@ -24,7 +57,7 @@ class TopChart extends Component {
           borderWidth: 1,
           hoverBackgroundColor: 'rgba(255,99,132,0.4)',
           hoverBorderColor: 'rgba(255,99,132,1)',
-          data: [33, 24, 17]
+          data: idealData
         }
       ]
     };

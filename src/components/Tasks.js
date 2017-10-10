@@ -4,16 +4,14 @@ import './Tasks.css';
 import Task from './Task';
 
 class Tasks extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const tasks = this.props.tasks.map(task => {
       return <Task
+                key={ task.name }
                 name={ task.name }
                 current={ task.current }
-                ideal={ task.ideal } />
+                ideal={ task.ideal }
+                handleTaskChange={ this.props.handleTaskChange } />
     })
 
     return (

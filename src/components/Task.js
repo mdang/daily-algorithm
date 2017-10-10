@@ -2,25 +2,22 @@ import React, { Component } from 'react';
 import './Task.css';
 
 class Task extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="col-md-3 col-sm-6 col-xs-12 task">
         <div className="card">
           <div className="card-body">
             <div className="card-remove">
-              <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
+              <a href="/"> <i className="fa fa-times" aria-hidden="true"></i></a>
             </div>
             <div className="md-form">
               <input
                 type="text"
                 name="task"
                 className="form-control"
-                value={ this.props.name } />
-              <label for="task">Task</label>
+                value={ this.props.name }
+                onChange={ this.props.handleTaskChange } />
+              <label htmlFor="task">Task</label>
             </div>
 
             <div className="md-form">
@@ -32,8 +29,8 @@ class Task extends Component {
                 max="1440"
                 className="form-control"
                 value={ this.props.current }
-                />
-              <label for="current">Current time <span>(minutes)</span></label>
+                onChange={ this.props.handleTaskChange } />
+              <label htmlFor="current">Current time <span>(minutes)</span></label>
             </div>
 
             <div className="md-form">
@@ -45,8 +42,8 @@ class Task extends Component {
                 max="1440"
                 className="form-control"
                 value={ this.props.ideal }
-              />
-              <label for="ideal">Ideal time <span>(minutes)</span></label>
+                onChange={ this.props.handleTaskChange } />
+              <label htmlFor="ideal">Ideal time <span>(minutes)</span></label>
             </div>
           </div>
         </div>
