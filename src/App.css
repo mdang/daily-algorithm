@@ -5,7 +5,7 @@ main {
 main section {
   width: 33%;
   float: left;
-  padding: 0 1em 2em;
+  padding: 0 .7em 2em;
 }
 
 nav.heading {
@@ -20,6 +20,16 @@ article {
   margin-bottom: 1rem;
 }
 
+.md-form label {
+  font-size: .9rem;
+  top: 1.1rem;
+  z-index: -9;
+}
+
+.md-form .prefix {
+  font-size: 1.7rem;
+}
+
 .navbar-brand {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.7rem;
@@ -27,19 +37,30 @@ article {
 
 .card {
   margin-bottom: .7em;
+  z-index: 1;
+}
+
+.card .form-control {
+  padding: .7rem 0 .75rem;
 }
 
 .card .navbar {
   color: #fff;
+  font-weight: 400;
 }
 
 .card-chart {
-  padding: .4em;
-  margin: .3em .7em;
+  padding: .5em .8em .2em;
+  margin: .3em .4em;
 }
 
 .card-body {
   padding: 1.3em 1.6em .8em;
+}
+
+.card-body label span {
+  color: #ddd;
+  font-size: .9em;
 }
 
 .card-remove {
@@ -59,7 +80,8 @@ article {
 }
 
 .card-body i {
-  padding-top: .3em;
+  padding-top: .55em;
+  padding-left: .4em;
 }
 
 .card-text {

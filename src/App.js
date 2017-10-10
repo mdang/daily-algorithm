@@ -9,30 +9,33 @@ class App extends Component {
   render() {
     const pieData = {
     	labels: [
-    		'Red',
-    		'Green',
-    		'Yellow'
+    		'Sleep',
+    		'Watching TV',
+    		'Shower',
+        'Free time'
     	],
     	datasets: [{
-    		data: [300, 50, 100],
+    		data: [300, 50, 100, 124],
     		backgroundColor: [
-    		'#FF6384',
-    		'#36A2EB',
-    		'#FFCE56'
+      		'#FF6384',
+      		'#36A2EB',
+      		'#FFCE56',
+          '#FF9900'
     		],
     		hoverBackgroundColor: [
-    		'#FF6384',
-    		'#36A2EB',
-    		'#FFCE56'
+      		'#FF6384',
+      		'#36A2EB',
+      		'#FFCE56',
+          '#FF9900'
     		]
     	}]
     };
 
     const barData = {
-      labels: ['January', 'February', 'March'],
+      labels: ['Sleep', 'Watching TV', 'Shower'],
       datasets: [
         {
-          label: 'My First dataset',
+          label: 'Current',
           backgroundColor: 'rgba(255,99,132,0.2)',
           borderColor: 'rgba(255,255,255,1)',
           borderWidth: 1,
@@ -41,7 +44,7 @@ class App extends Component {
           data: [65, 59, 80]
         },
         {
-          label: 'My Second dataset',
+          label: 'Optimized',
           backgroundColor: 'rgb(79,195,247)',
           borderColor: 'rgba(255,255,255,1)',
           borderWidth: 1,
@@ -61,7 +64,7 @@ class App extends Component {
         <main className="container-fluid">
           <article>
             <section>
-              <div className="card">
+              <div className="card z-depth-1-half">
                 <nav className="navbar navbar-dark deep-orange lighten-1">
                   Current Time Usage
                 </nav>
@@ -71,13 +74,13 @@ class App extends Component {
 
                 </div>
                 <div className="card-body">
-                  <p className="card-text text-center">Tasks that you currently do everyday</p>
+                  <p className="card-text text-center">What an average day for you looks like today.</p>
                 </div>
               </div>
             </section>
 
             <section>
-              <div className="card">
+              <div className="card z-depth-1-half">
                 <nav className="navbar navbar-dark deep-orange lighten-1">
                   Optimized Time Usage
                 </nav>
@@ -87,15 +90,15 @@ class App extends Component {
 
                 </div>
                 <div className="card-body">
-                  <p className="card-text text-center">Tasks that you want to do everyday going forward</p>
+                  <p className="card-text text-center">In order to reach your long-term goals, the ideal day.</p>
                 </div>
               </div>
             </section>
 
             <section>
-              <div className="card">
+              <div className="card z-depth-1-half">
                 <nav className="navbar navbar-dark deep-orange lighten-1">
-                  Top Time Thieves
+                  Top Time Gains
                 </nav>
                 <div className="card-chart">
 
@@ -109,7 +112,7 @@ class App extends Component {
 
                 </div>
                 <div className="card-body">
-                  <p className="card-text text-center">Tasks that you want to do everyday going forward</p>
+                  <p className="card-text text-center">Where you save the most time, based on optimizations.</p>
                 </div>
               </div>
             </section>
@@ -127,24 +130,22 @@ class App extends Component {
                   <div className="card-remove">
                     <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                   </div>
-                  <form>
-                    <div className="md-form">
-                      <input type="text" name="task" className="form-control" />
-                      <label for="task">Task</label>
-                    </div>
+                  <div className="md-form">
+                    <input type="text" name="task" className="form-control" />
+                    <label for="task">Task</label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Current Time</label>
-                    </div>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Current time spent <span>(minutes)</span></label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Ideal Time</label>
-                    </div>
-                  </form>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                  </div>
                 </div>
               </div>
 
@@ -153,24 +154,22 @@ class App extends Component {
                   <div className="card-remove">
                     <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                   </div>
-                  <form>
-                    <div className="md-form">
-                      <input type="text" name="task" className="form-control" />
-                      <label for="task">Task</label>
-                    </div>
+                  <div className="md-form">
+                    <input type="text" name="task" className="form-control" />
+                    <label for="task">Task</label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Current Time</label>
-                    </div>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Current time spent <span>(minutes)</span></label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Ideal Time</label>
-                    </div>
-                  </form>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                  </div>
                 </div>
               </div>
 
@@ -179,24 +178,22 @@ class App extends Component {
                   <div className="card-remove">
                     <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                   </div>
-                  <form>
-                    <div className="md-form">
-                      <input type="text" name="task" className="form-control" />
-                      <label for="task">Task</label>
-                    </div>
+                  <div className="md-form">
+                    <input type="text" name="task" className="form-control" />
+                    <label for="task">Task</label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Current Time</label>
-                    </div>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Current time spent <span>(minutes)</span></label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Ideal Time</label>
-                    </div>
-                  </form>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                  </div>
                 </div>
               </div>
 
@@ -205,24 +202,22 @@ class App extends Component {
                   <div className="card-remove">
                     <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                   </div>
-                  <form>
-                    <div className="md-form">
-                      <input type="text" name="task" className="form-control" />
-                      <label for="task">Task</label>
-                    </div>
+                  <div className="md-form">
+                    <input type="text" name="task" className="form-control" />
+                    <label for="task">Task</label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Current Time</label>
-                    </div>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Current time spent <span>(minutes)</span></label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Ideal Time</label>
-                    </div>
-                  </form>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                  </div>
                 </div>
               </div>
 
@@ -231,24 +226,22 @@ class App extends Component {
                   <div className="card-remove">
                     <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                   </div>
-                  <form>
-                    <div className="md-form">
-                      <input type="text" name="task" className="form-control" />
-                      <label for="task">Task</label>
-                    </div>
+                  <div className="md-form">
+                    <input type="text" name="task" className="form-control" />
+                    <label for="task">Task</label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Current Time</label>
-                    </div>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Current time spent <span>(minutes)</span></label>
+                  </div>
 
-                    <div className="md-form">
-                      <i className="fa fa-clock-o prefix grey-text"></i>
-                      <input type="number" name="minutes" className="form-control" />
-                      <label for="minutes">Ideal Time</label>
-                    </div>
-                  </form>
+                  <div className="md-form">
+                    <i className="fa fa-clock-o prefix grey-text"></i>
+                    <input type="number" name="minutes" min="0" max="1440" className="form-control" />
+                    <label for="minutes">Ideal time spent <span>(minutes)</span></label>
+                  </div>
                 </div>
               </div>
 
