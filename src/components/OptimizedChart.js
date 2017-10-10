@@ -4,16 +4,23 @@ import './OptimizedChart.css';
 import { Pie } from 'react-chartjs-2';
 
 class OptimizedChart extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const labels = this.props.tasks.map(task => {
+      return task.name
+    });
+
+    const data = this.props.tasks.map(task => {
+      return task.ideal;
+    });
+
     const pieData = {
-    	labels: [
-    		'Sleep',
-    		'Watching TV',
-    		'Shower',
-        'Free time'
-    	],
+    	labels: labels,
     	datasets: [{
-    		data: [300, 50, 100, 124],
+    		data: data,
     		backgroundColor: [
       		'#FF6384',
       		'#36A2EB',
@@ -27,7 +34,7 @@ class OptimizedChart extends Component {
           '#FF9900'
     		]
     	}]
-    };
+    }
 
     return (
       <section className="col-md-4 col-sm-6 col-xs-12">
@@ -36,9 +43,7 @@ class OptimizedChart extends Component {
             Optimized Time Usage
           </nav>
           <div className="card-chart">
-
-            <Pie data={pieData} />
-
+            <Pie data={ pieData } />
           </div>
           <div className="card-body">
             <p className="card-text text-center">In order to reach your long-term goals, the ideal day.</p>

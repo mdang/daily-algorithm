@@ -46,7 +46,7 @@ article {
 }
 
 .card .form-control {
-  padding: .7rem 0 .75rem;
+  padding: .7rem 0 0;
 }
 
 .card .navbar {
@@ -85,7 +85,7 @@ article {
 }
 
 .card-body i {
-  padding-top: .55em;
+  padding-top: .5em;
   padding-left: .4em;
 }
 
@@ -96,6 +96,7 @@ article {
 
 .tasks {
   margin-top: 0;
+  width: 100%;
 }
 
 .task .card {

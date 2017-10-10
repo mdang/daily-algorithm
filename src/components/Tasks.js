@@ -4,7 +4,18 @@ import './Tasks.css';
 import Task from './Task';
 
 class Tasks extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const tasks = this.props.tasks.map(task => {
+      return <Task
+                name={ task.name }
+                current={ task.current }
+                ideal={ task.ideal } />
+    })
+
     return (
       <article>
         <div className="text-center">
@@ -12,15 +23,7 @@ class Tasks extends Component {
         </div>
 
         <section className="tasks row">
-
-          <Task />
-          <Task />
-          <Task />
-          <Task />
-          <Task />
-          <Task />
-          <Task />
-
+          { tasks }
         </section>
       </article>
     )

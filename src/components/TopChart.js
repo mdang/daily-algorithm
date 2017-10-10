@@ -5,7 +5,7 @@ import { Bar } from 'react-chartjs-2';
 
 class TopChart extends Component {
   render() {
-    const barData = {
+    const data = {
       labels: ['Sleep', 'Watching TV', 'Shower'],
       datasets: [
         {
@@ -38,12 +38,10 @@ class TopChart extends Component {
           <div className="card-chart">
 
             <Bar
-              data={barData}
+              data={ data }
               options={{
-                width: '50%',
                 maintainAspectRatio: true
-              }}
-            />
+              }} />
 
           </div>
           <div className="card-body">

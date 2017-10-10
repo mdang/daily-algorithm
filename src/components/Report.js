@@ -6,14 +6,16 @@ import OptimizedChart from './OptimizedChart';
 import TopChart from './TopChart';
 
 class Report extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <article className="row">
-
-        <CurrentChart />
-        <OptimizedChart />
-        <TopChart />
-
+        <CurrentChart { ...this.props } />
+        <OptimizedChart { ...this.props } />
+        <TopChart { ...this.props } />
       </article>
     )
   }
