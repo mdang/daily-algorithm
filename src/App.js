@@ -98,7 +98,7 @@ class App extends Component {
             <section>
               <div className="card z-depth-1-half">
                 <nav className="navbar navbar-dark deep-orange lighten-1">
-                  Top Time Gains
+                  Top Time Wasters
                 </nav>
                 <div className="card-chart">
 
@@ -112,23 +112,23 @@ class App extends Component {
 
                 </div>
                 <div className="card-body">
-                  <p className="card-text text-center">Where you save the most time, based on optimizations.</p>
+                  <p className="card-text text-center">Where you stand to regain most of your time.</p>
                 </div>
               </div>
             </section>
           </article>
 
           <article>
-            <div class="text-center">
-              <button class="btn btn-default">Add Daily Task</button>
+            <div className="text-center">
+              <button className="btn btn-default">Add Daily Task</button>
             </div>
 
-            <section className="tasks-container">
+            <section className="tasks">
 
               <div className="card task">
                 <div className="card-body">
                   <div className="card-remove">
-                    <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
                   </div>
                   <div className="md-form">
                     <input type="text" name="task" className="form-control" />
@@ -152,7 +152,7 @@ class App extends Component {
               <div className="card task">
                 <div className="card-body">
                   <div className="card-remove">
-                    <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
                   </div>
                   <div className="md-form">
                     <input type="text" name="task" className="form-control" />
@@ -176,7 +176,7 @@ class App extends Component {
               <div className="card task">
                 <div className="card-body">
                   <div className="card-remove">
-                    <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
                   </div>
                   <div className="md-form">
                     <input type="text" name="task" className="form-control" />
@@ -200,7 +200,7 @@ class App extends Component {
               <div className="card task">
                 <div className="card-body">
                   <div className="card-remove">
-                    <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
                   </div>
                   <div className="md-form">
                     <input type="text" name="task" className="form-control" />
@@ -224,7 +224,7 @@ class App extends Component {
               <div className="card task">
                 <div className="card-body">
                   <div className="card-remove">
-                    <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <a href="#"><i className="fa fa-times" aria-hidden="true"></i></a>
                   </div>
                   <div className="md-form">
                     <input type="text" name="task" className="form-control" />

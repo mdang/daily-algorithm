@@ -89,13 +89,13 @@ article {
   color: #747373;
 }
 
-.tasks-container {
+.tasks {
   width: 100%;
   margin-top: .7em;
 }
 
-.tasks-container .card {
-  width: calc(24.4% - .5em);
+.tasks .card {
+  width: calc(24% - .5em);
   display: inline-block;
   margin: .5em;
 }
