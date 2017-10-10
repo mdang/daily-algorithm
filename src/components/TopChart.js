@@ -21,11 +21,7 @@ class TopChart extends Component {
       }
     });
 
-    console.log('sortedTasks', sortedTasks);
-
     const topTasks = sortedTasks.splice(0, 3);
-    console.log('topTasks', topTasks);
-
     const labels = topTasks.map(task => {
       return task.name;
     });
@@ -43,7 +39,7 @@ class TopChart extends Component {
       datasets: [
         {
           label: 'Current',
-          backgroundColor: 'rgba(255,99,132,0.2)',
+          backgroundColor: '#FFCE56',
           borderColor: 'rgba(255,255,255,1)',
           borderWidth: 1,
           hoverBackgroundColor: 'rgba(255,99,132,0.4)',
@@ -69,13 +65,11 @@ class TopChart extends Component {
             Top Time Wasters
           </nav>
           <div className="card-chart">
-
             <Bar
               data={ data }
               options={{
                 maintainAspectRatio: true
               }} />
-
           </div>
           <div className="card-body">
             <p className="card-text text-center">Where you stand to regain most of your time.</p>

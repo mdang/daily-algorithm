@@ -3,32 +3,40 @@ import './CurrentChart.css';
 
 import { Pie } from 'react-chartjs-2';
 
+import { dynamicColor, calculateFreeTime } from '../helpers/functions';
+import * as constants from '../constants';
+
 class CurrentChart extends Component {
   render() {
-    const labels = this.props.tasks.map(task => {
+    const tasks = this.props.tasks.slice(0);
+
+    const freeTime = calculateFreeTime(tasks);
+    freeTime.name = constants.FREE_TIME_LABEL;
+    freeTime.backgroundColor = constants.FREE_TIME_BACKGROUND_COLOR;
+
+    tasks.push(freeTime);
+
+    const labels = tasks.map(task => {
       return task.name
     });
 
-    const data = this.props.tasks.map(task => {
+    const data = tasks.map(task => {
       return task.current;
+    });
+
+    const colors = tasks.map(task => {
+      return task.backgroundColor ?
+                task.backgroundColor :
+                dynamicColor();
     });
 
     const pieData = {
     	labels: labels,
     	datasets: [{
     		data: data,
-    		backgroundColor: [
-      		'#FF6384',
-      		'#36A2EB',
-      		'#FFCE56',
-          '#FF9900'
-    		],
-    		hoverBackgroundColor: [
-      		'#FF6384',
-      		'#36A2EB',
-      		'#FFCE56',
-          '#FF9900'
-    		]
+    		backgroundColor: colors,
+    		hoverBackgroundColor: constants.DEFAULT_HOVER_BACKGROUND_COLOR,
+        hoverBorderColor: constants.DEFAULT_HOVER_BORDER_COLOR
     	}]
     }
 
