@@ -34,6 +34,12 @@ article {
   font-size: 1.7rem;
 }
 
+.nav-item {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
 .card {
   margin-bottom: .7em;
   z-index: 1;

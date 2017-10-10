@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-import {Pie, Bar} from 'react-chartjs-2';
-
+import { Pie, Bar } from 'react-chartjs-2';
 
 class App extends Component {
   render() {
@@ -59,6 +58,9 @@ class App extends Component {
       <div className="app container-fluid">
         <nav className="heading navbar navbar-dark deep-orange darken-2">
           <a className="navbar-brand" href="/">Daily Algorithm</a>
+          <div className="nav-item">
+            <a className="nav-link" href="https://github.com/mdang/daily-algorithm"><i className="fa fa-github"></i></a>
+          </div>
         </nav>
 
         <main className="container-fluid">
@@ -74,7 +76,7 @@ class App extends Component {
 
                 </div>
                 <div className="card-body">
-                  <p className="card-text text-center">What an average day for you looks like today.</p>
+                  <p className="card-text text-center">What an average day for you looks like now.</p>
                 </div>
               </div>
             </section>
