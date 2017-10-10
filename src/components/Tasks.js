@@ -7,17 +7,21 @@ class Tasks extends Component {
   render() {
     const tasks = this.props.tasks.map(task => {
       return <Task
-                key={ task.name }
+                key={ task.id }
+                id={ task.id }
                 name={ task.name }
                 current={ task.current }
                 ideal={ task.ideal }
-                handleTaskChange={ this.props.handleTaskChange } />
+                backgroundColor={ task.backgroundColor }
+                { ...this.props } />
     })
 
     return (
       <article>
         <div className="text-center">
-          <button className="btn btn-default">Add Daily Task</button>
+          <button
+            onClick={ this.props.handleTaskAdd }
+            className="btn btn-default">Add Daily Task</button>
         </div>
 
         <section className="tasks row">

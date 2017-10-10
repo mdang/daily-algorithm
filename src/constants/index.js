@@ -1,6 +1,7 @@
 export const FREE_TIME_LABEL = 'Free time';
 export const FREE_TIME_BACKGROUND_COLOR = '#ff6347';
 
+export const SLEEP_ID = 'sleep-task';
 export const SLEEP_LABEL = 'Sleep';
 export const SLEEP_BACKGROUND_COLOR = '#FFCE56';
 

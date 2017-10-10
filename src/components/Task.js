@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import './Task.css';
 
+import * as constants from '../constants';
+
 class Task extends Component {
   render() {
     return (
-      <div className="col-md-3 col-sm-6 col-xs-12 task">
+      <div id={ this.props.id } className="col-md-3 col-sm-6 col-xs-12 task">
         <div className="card">
+          <div className="card-top" style={{ backgroundColor: this.props.backgroundColor, padding: '.2em' }}>
+
+          </div>
           <div className="card-body">
-            <div className="card-remove">
-              <a href="/"> <i className="fa fa-times" aria-hidden="true"></i></a>
-            </div>
+            {
+              (this.props.id !== constants.SLEEP_ID) ?
+                <div className="card-remove">
+                  <a href="/"> <i className="fa fa-times" aria-hidden="true"></i></a>
+                </div> :
+                ''
+            }
+
             <div className="md-form">
               <input
                 type="text"

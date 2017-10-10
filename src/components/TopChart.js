@@ -3,6 +3,8 @@ import './TopChart.css';
 
 import { Bar } from 'react-chartjs-2';
 
+import * as constants from '../constants';
+
 class TopChart extends Component {
   render() {
     const tasks = this.props.tasks.slice(0);
@@ -42,17 +44,17 @@ class TopChart extends Component {
           backgroundColor: '#FFCE56',
           borderColor: 'rgba(255,255,255,1)',
           borderWidth: 1,
-          hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-          hoverBorderColor: 'rgba(255,99,132,1)',
+          hoverBackgroundColor: constants.DEFAULT_HOVER_BACKGROUND_COLOR,
+          hoverBorderColor: constants.DEFAULT_HOVER_BORDER_COLOR,
           data: currentData
         },
         {
           label: 'Optimized',
-          backgroundColor: 'rgb(79,195,247)',
+          backgroundColor: 'rgba(79,195,247,1)',
           borderColor: 'rgba(255,255,255,1)',
           borderWidth: 1,
-          hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-          hoverBorderColor: 'rgba(255,99,132,1)',
+          hoverBackgroundColor: constants.DEFAULT_HOVER_BACKGROUND_COLOR,
+          hoverBorderColor: constants.DEFAULT_HOVER_BORDER_COLOR,
           data: idealData
         }
       ]
