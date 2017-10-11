@@ -7,13 +7,14 @@ import * as constants from '../constants';
 
 class TopChart extends Component {
   render() {
-    const tasks = this.props.tasks.slice(0);
+    const tasks = this.props.tasks.filter(task => {
+      return (parseInt(task.ideal, 10) > 0 && parseInt(task.current, 10) > 0);
+    });
+
     const sortedTasks = tasks.map(task => {
       task.diff = parseInt(task.ideal, 10) - parseInt(task.current, 10);
       return task;
-    });
-
-    sortedTasks.sort((a, b) => {
+    }).sort((a, b) => {
       if (a.diff < b.diff) {
         return -1;
       } else if (a.diff > b.diff) {

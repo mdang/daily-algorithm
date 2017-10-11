@@ -8,7 +8,7 @@ import * as constants from '../constants';
 
 class CurrentChart extends Component {
   render() {
-    const tasks = this.props.tasks.slice(0).filter(task => {
+    const tasks = this.props.tasks.filter(task => {
       return (task.current > 0);
     });
 

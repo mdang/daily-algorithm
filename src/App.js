@@ -30,11 +30,9 @@ class App extends Component {
   }
 
   handleTaskChange(task, e) {
-    console.log('Task changed:', task, e.target.name, e.target.value);
     const tasks = this.state.tasks.map(prevTask => {
       if (prevTask.id === task.id) {
         prevTask[e.target.name] = e.target.value;
-        console.log('prevTask', prevTask);
       }
 
       return prevTask;
@@ -61,28 +59,17 @@ class App extends Component {
     });
   }
 
-  handleTaskDelete(e) {
-    console.log('Delete task', e);
-    // const tasks = this.state.tasks.slice(0);
+  handleTaskDelete(task, e) {
+    const tasks = this.state.tasks.filter(prevTask => {
+      return prevTask.id !== task.id;
+    });
 
+    this.setState({
+      tasks: tasks
+    });
   }
 
   render() {
-    // const tasks = [
-    //   // {
-    //   //   name: 'Free time',
-    //   //   current: 60 * 24 - (60 * 8),
-    //   //   ideal: 60 * 24 - (60 * 8),
-    //   //   color: '#ff6347'
-    //   // },
-    //   {
-    //     name: 'Sleep',
-    //     current: 60 * 8,
-    //     ideal: 60 * 8,
-    //     color: '#FFCE56'
-    //   }
-    // ];
-
     return (
       <div className="app container-fluid">
         <NavBar />

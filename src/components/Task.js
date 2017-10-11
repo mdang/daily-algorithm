@@ -13,8 +13,7 @@ class Task extends Component {
             {
               (this.props.task.id !== constants.SLEEP_ID) ?
                 <div className="card-remove">
-                  <a href="/"
-                    onClick={ this.props.handleTaskDelete.bind(null, this.props.task) }> <i className="fa fa-times" aria-hidden="true"></i></a>
+                  <a onClick={ this.props.handleTaskDelete.bind(null, this.props.task) }> <i className="fa fa-times" aria-hidden="true"></i></a>
                 </div> :
                 ''
             }
