@@ -8,7 +8,9 @@ import * as constants from '../constants';
 
 class CurrentChart extends Component {
   render() {
-    const tasks = this.props.tasks.slice(0);
+    const tasks = this.props.tasks.slice(0).filter(task => {
+      return (task.current > 0);
+    });
 
     const freeTime = calculateFreeTime(tasks);
     freeTime.name = constants.FREE_TIME_LABEL;
@@ -21,7 +23,7 @@ class CurrentChart extends Component {
     });
 
     const data = tasks.map(task => {
-      return task.current;
+      return (task.current ? task.current : 0);
     });
 
     const colors = tasks.map(task => {
