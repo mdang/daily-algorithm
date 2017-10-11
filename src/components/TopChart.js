@@ -9,7 +9,7 @@ class TopChart extends Component {
   render() {
     const tasks = this.props.tasks.slice(0);
     const sortedTasks = tasks.map(task => {
-      task.diff = task.ideal - task.current;
+      task.diff = parseInt(task.ideal, 10) - parseInt(task.current, 10);
       return task;
     });
 

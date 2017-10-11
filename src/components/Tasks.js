@@ -8,11 +8,7 @@ class Tasks extends Component {
     const tasks = this.props.tasks.map(task => {
       return <Task
                 key={ task.id }
-                id={ task.id }
-                name={ task.name }
-                current={ task.current }
-                ideal={ task.ideal }
-                backgroundColor={ task.backgroundColor }
+                task={ task }
                 { ...this.props } />
     })
 

@@ -29,11 +29,23 @@ class App extends Component {
     this.handleTaskDelete = this.handleTaskDelete.bind(this);
   }
 
-  handleTaskChange(e) {
-    console.log('Task changed:', e);
+  handleTaskChange(task, e) {
+    console.log('Task changed:', task, e.target.name, e.target.value);
+    const tasks = this.state.tasks.map(prevTask => {
+      if (prevTask.id === task.id) {
+        prevTask[e.target.name] = e.target.value;
+        console.log('prevTask', prevTask);
+      }
+
+      return prevTask;
+    })
+
+    this.setState({
+      tasks: tasks
+    })
   }
 
-  handleTaskAdd() {
+  handleTaskAdd(e) {
     const tasks = this.state.tasks.slice(0);
 
     tasks.push({

@@ -6,16 +6,15 @@ import * as constants from '../constants';
 class Task extends Component {
   render() {
     return (
-      <div id={ this.props.id } className="col-md-3 col-sm-6 col-xs-12 task">
+      <div id={ this.props.task.id } className="col-md-3 col-sm-6 col-xs-12 task">
         <div className="card">
-          <div className="card-top" style={{ backgroundColor: this.props.backgroundColor, padding: '.2em' }}>
-
-          </div>
+          <div className="card-top" style={{ backgroundColor: this.props.task.backgroundColor }}></div>
           <div className="card-body">
             {
-              (this.props.id !== constants.SLEEP_ID) ?
+              (this.props.task.id !== constants.SLEEP_ID) ?
                 <div className="card-remove">
-                  <a href="/"> <i className="fa fa-times" aria-hidden="true"></i></a>
+                  <a href="/"
+                    onClick={ this.props.handleTaskDelete.bind(null, this.props.task) }> <i className="fa fa-times" aria-hidden="true"></i></a>
                 </div> :
                 ''
             }
@@ -23,10 +22,10 @@ class Task extends Component {
             <div className="md-form">
               <input
                 type="text"
-                name="task"
+                name="name"
                 className="form-control"
-                value={ this.props.name }
-                onChange={ this.props.handleTaskChange } />
+                value={ this.props.task.name }
+                onChange={ this.props.handleTaskChange.bind(null, this.props.task) } />
               <label htmlFor="task">Task</label>
             </div>
 
@@ -38,8 +37,8 @@ class Task extends Component {
                 min="0"
                 max="1440"
                 className="form-control"
-                value={ this.props.current }
-                onChange={ this.props.handleTaskChange } />
+                value={ this.props.task.current }
+                onChange={ this.props.handleTaskChange.bind(null, this.props.task) } />
               <label htmlFor="current">Current time <span>(minutes)</span></label>
             </div>
 
@@ -51,8 +50,8 @@ class Task extends Component {
                 min="0"
                 max="1440"
                 className="form-control"
-                value={ this.props.ideal }
-                onChange={ this.props.handleTaskChange } />
+                value={ this.props.task.ideal }
+                onChange={ this.props.handleTaskChange.bind(null, this.props.task) } />
               <label htmlFor="ideal">Ideal time <span>(minutes)</span></label>
             </div>
           </div>

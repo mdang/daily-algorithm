@@ -10,10 +10,10 @@ const calculateFreeTime = tasks => {
   const totalMinutesInDay = 60 * 24;
 
   const totalCurrentTime = tasks.reduce((sum, task) => {
-    return sum + task.current;
+    return sum += parseInt(task.current, 10);
   }, 0);
   const totalIdealTime = tasks.reduce((sum, task) => {
-    return sum + task.ideal;
+    return sum += parseInt(task.ideal, 10);
   }, 0);
 
   return {
