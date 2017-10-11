@@ -1,0 +1,14 @@
+.card-chart {
+  padding: .5em .8em .2em;
+  margin: .3em .4em;
+}
+
+.card .navbar {
+  color: #fff;
+  font-weight: 400;
+}
+
+.card-text {
+  font-size: .9rem;
+  color: #747373;
+}

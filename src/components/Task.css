@@ -1,0 +1,42 @@
+.md-form {
+  margin-bottom: 1rem;
+}
+
+.md-form label {
+  font-size: .85rem;
+  top: 1.1rem;
+  z-index: -9;
+}
+
+.md-form .prefix {
+  font-size: 1.7rem;
+}
+
+.card-body label span {
+  color: #ddd;
+  font-size: .9em;
+}
+
+.card-remove {
+  position: absolute;
+  right: 20px;
+  top: 7px;
+}
+
+.card-remove i {
+  color: #333;
+}
+
+.card-body i {
+  padding-top: .5em;
+  padding-left: .4em;
+}
+
+.task .card {
+  padding: 0 .5em;
+  margin-top: .8em;
+}
+
+.card .form-control {
+  padding: .7rem 0 0;
+}
