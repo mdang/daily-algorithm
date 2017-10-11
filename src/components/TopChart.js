@@ -13,6 +13,7 @@ class TopChart extends Component {
 
     const sortedTasks = tasks.map(task => {
       task.diff = parseInt(task.ideal, 10) - parseInt(task.current, 10);
+
       return task;
     }).sort((a, b) => {
       if (a.diff < b.diff) {
@@ -41,18 +42,18 @@ class TopChart extends Component {
       labels: labels,
       datasets: [
         {
-          label: 'Current',
-          backgroundColor: '#FFCE56',
-          borderColor: 'rgba(255,255,255,1)',
+          label: constants.TOP_CURRENT_LABEL,
+          backgroundColor: constants.TOP_CURRENT_BACKGROUND_COLOR,
+          borderColor: constants.TOP_CURRENT_BORDER_COLOR,
           borderWidth: 1,
           hoverBackgroundColor: constants.DEFAULT_HOVER_BACKGROUND_COLOR,
           hoverBorderColor: constants.DEFAULT_HOVER_BORDER_COLOR,
           data: currentData
         },
         {
-          label: 'Optimized',
-          backgroundColor: 'rgba(79,195,247,1)',
-          borderColor: 'rgba(255,255,255,1)',
+          label: constants.TOP_OPTIMIZED_LABEL,
+          backgroundColor: constants.TOP_OPTIMIZED_BACKGROUND_COLOR,
+          borderColor: constants.TOP_OPTIMIZED_BORDER_COLOR,
           borderWidth: 1,
           hoverBackgroundColor: constants.DEFAULT_HOVER_BACKGROUND_COLOR,
           hoverBorderColor: constants.DEFAULT_HOVER_BORDER_COLOR,
