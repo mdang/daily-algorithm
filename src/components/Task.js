@@ -21,6 +21,7 @@ class Task extends Component {
 
             <div className="md-form">
               <input
+                autoFocus
                 type="text"
                 name="name"
                 className="form-control"
