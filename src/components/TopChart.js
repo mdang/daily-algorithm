@@ -8,7 +8,7 @@ import * as constants from '../constants';
 class TopChart extends Component {
   render() {
     const tasks = this.props.tasks.filter(task => {
-      return (parseInt(task.ideal, 10) > 0 && parseInt(task.current, 10) > 0);
+      return (parseInt(task.current, 10) - parseInt(task.ideal, 10)) > 0;
     });
 
     const sortedTasks = tasks.map(task => {
