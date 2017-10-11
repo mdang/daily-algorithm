@@ -4,21 +4,22 @@
 
 An algorithm is a set of steps to accomplish a task or solve a problem. Algorithms are all around us, however something we don't give enough attention to are the algorithms that propel us forward in our daily lives. 
 
-The Daily Algorithm is comprised of the habits and routines that make up our daily lives. Your Daily Algorithm is not about every single task that you carry out every day. It's the collection of tasks and steps you are guaranteed to take everyday on average without thinking. They are the habits that shape your character and propel you toward long-term goals.
+The Daily Algorithm is comprised of the habits and routines that make up an average day for us. To be clear, it's not about every single task that you carry out every day. It's the collection of tasks and steps you're guaranteed to take every day without thinking. They are the habits that shape your character and propel you toward long-term goals.
 
 ## Why Should I Care? (5 min)
 
 - We're often times flying by the seat of our pants. A lot of our habits have been formed without much thought. 
 - Habits are the foundation for our character. It's not one moment that will make you great, it's the sum of everything you've done that matters.
-- To reach our long-term goals, it's rarely ever just "let me work for a week" and then it suddenly happens. Long-term goals require advances through a long period of time, and you need to prepare for the defining moments through repetition and small steps forward.
+- To reach our long-term goals, it's rarely ever just "let me work for a few days" and then it suddenly happens. Long-term goals require advances through long periods of time, and you need to prepare for defining moments through repetition and small steps forward.
 - When you don't have something that you "have to do", what you end up is wasting time on debating whether you should do it or not. Decide up front what you "have to do" vs what's "nice to do".
 
-> Anecdote about spending 5 minutes thinking about whether to do a 7 minute workout or not.
+> I spent 5 minutes thinking about whether to do a 7 minute workout or not.
 
 ## Your Daily Algorithm (15 min)
 
-Before we can optimize our daily algorithm, we have to first understand what it currently is. 
-Think through a typical day from the perspective of a 3rd party. What are the tasks you are guaranteed to spend time on any given day? Don't get bogged down with uncommon tasks or the weekend. Focus on the tasks that you repeat over and over throughout the week. Write down your thoughts somewhere, like on paper, a text editor, [Trello](https://trello.com/), etc. 
+Before we can optimize our Daily Algorithm, we have to first understand what it currently is. 
+
+Think through a typical day from the perspective of a 3rd party. What are the tasks you're guaranteed to spend time on any given day? Don't get bogged down with uncommon tasks or the weekend. Focus on the tasks that you repeat over and over throughout the week. Write down your thoughts somewhere, like on paper, a text editor, [Trello](https://trello.com/), etc. 
 
 - I recommend not sharing it at first because it's easier to be brutally honest when you're the only one seeing it. Be honest with how you spend your time. 
 - Often times, we think about the time we spend in terms of what it "should" or "ideally" be. Reflect though and think about how much time you **actually** spend on them. 
