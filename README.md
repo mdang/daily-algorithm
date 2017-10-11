@@ -1,8 +1,6 @@
 # Daily Algorithm
 
-<div>
-	<iframe src="https://giphy.com/embed/ofqccIX7HcjPG" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-</div>
+![algorithm gif](https://i.giphy.com/3o6Yg4GUVgIUg3bf7W.gif)
 
 - Algorithms are all around us, however something we don't give enough attention to are the algorithms that propel us forward in our daily lives.
 - Your Daily Life Algorithm (DLA) is not every single task that you carry out everyday. It's the collection of tasks and steps you are guaranteed to take everyday without thinking. Essentially it's the habits that you have that shape your character and propel you toward your long-term goals without much thought.
