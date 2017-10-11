@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './CurrentChart.css';
 
 import { Pie } from 'react-chartjs-2';

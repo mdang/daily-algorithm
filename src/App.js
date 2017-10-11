@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './App.css';
 
 import NavBar from './components/NavBar';
@@ -46,11 +47,11 @@ class App extends Component {
   handleTaskAdd(e) {
     const tasks = this.state.tasks.slice(0);
 
-    tasks.push({
+    tasks.unshift({
       id: uuidv4(),
       name: '',
-      current: '',
-      ideal: '',
+      current: '',  // Setting as 0 will not initiate the input effect
+      ideal: '',    // Setting as 0 will not initiate the input effect
       backgroundColor: dynamicColor()
     });
 

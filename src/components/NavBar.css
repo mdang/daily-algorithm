@@ -1,0 +1,16 @@
+nav.heading {
+  margin-bottom: 1.2em;
+}
+
+.navbar-brand {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 1.7rem;
+  padding-bottom: .1em;
+  margin-bottom: 0;
+}
+
+.nav-item {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+}

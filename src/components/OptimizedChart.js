@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './OptimizedChart.css';
 
 import { Pie } from 'react-chartjs-2';
@@ -31,11 +32,6 @@ class OptimizedChart extends Component {
                 task.backgroundColor :
                 dynamicColor();
     });
-
-    // '#FF6384',
-    // '#36A2EB',
-    // '#FFCE56',
-    // '#FF9900'
 
     const pieData = {
     	labels: labels,

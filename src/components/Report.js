@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './Report.css';
 
 import CurrentChart from './CurrentChart';

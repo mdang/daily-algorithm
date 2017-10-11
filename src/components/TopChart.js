@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './TopChart.css';
 
 import { Bar } from 'react-chartjs-2';
@@ -7,6 +8,7 @@ import * as constants from '../constants';
 
 class TopChart extends Component {
   render() {
+    // Only display gains in time
     const tasks = this.props.tasks.filter(task => {
       return (parseInt(task.current, 10) - parseInt(task.ideal, 10)) > 0;
     });

@@ -8,6 +8,10 @@
   font-weight: 400;
 }
 
+.card nav {
+  font-family: 'Opens Sans Condensed', sans-serif;
+}
+
 .card-text {
   font-size: .9rem;
   color: #747373;

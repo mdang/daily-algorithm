@@ -6,3 +6,16 @@ body {
 p {
   font-color: #747373;
 }
+
+main {
+  margin: 0 auto;
+}
+
+main section {
+  float: left;
+  padding: 0 .7em 2em;
+}
+
+article {
+  clear: both;
+}
