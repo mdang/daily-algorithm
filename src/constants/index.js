@@ -15,3 +15,5 @@ export const TOP_CURRENT_BORDER_COLOR = 'rgba(255,255,255,1)';
 export const TOP_OPTIMIZED_LABEL = 'Optimized';
 export const TOP_OPTIMIZED_BACKGROUND_COLOR = 'rgba(79,195,247,1)';
 export const TOP_OPTIMIZED_BORDER_COLOR = 'rgba(255,255,255,1)';
+
+export const GITHUB_REPO_URL = 'https://github.com/mdang/daily-algorithm';
